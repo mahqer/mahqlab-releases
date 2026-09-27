@@ -1,27 +1,31 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.7.1",
+    "version": "1.8",
     "notes": [
-      "Session recorder now records FPS: average, 1% and 0.1% lows, and stutters in the game you're playing",
-      "Every FPS drop and lag spike on one timeline - with what caused it (CPU maxed, a busy app, the disk, ping)",
-      "Tick what to record before you start: FPS + stutters, lag spikes, or both",
-      "FPS is read by Intel's PresentMon from outside the game - no overlay, anti-cheat safe"
+      "NEW: Apps + storage - Uninstaller and Disk space map are now one tool with four tabs: installed, updates, space and new PC",
+      "Update every app in one key, with a progress bar and a plain reason when one can't update (open apps: C closes it and tries again)",
+      "New PC: save your app list, then install them all on a new PC in one go (or pick from popular apps)",
+      "Uninstall Microsoft Store apps too - and in the space tab, a big folder tells you which app it belongs to",
+      "Free edition: see which of your apps have updates",
+      "Startup audit: how long your PC takes to start and how much each startup app slows it (M measures your next startup) - and B restarts straight into your BIOS",
+      "Screen Director: fixed screens not coming back after switching off two at once, and the headset/speakers hotkey",
+      "Cleaner key hints at the bottom of every tool, and the Discord button is easier to find"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.7.1-lite.lock",
-        "sha256": "93bec6c9cb548e6b92128a8b0018c8057ad924b32ae62907d0b84d543e4fe2c8",
-        "size": 122937
+        "file": "releases/MahqLAB-1.8-lite.lock",
+        "sha256": "fc0f3f0931575476c7d7e95ca254ca93e8d3f1bdfb613d842c8d0cf63170c539",
+        "size": 157167
       },
       "full": {
-        "file": "releases/MahqLAB-1.7.1-full.lock",
-        "sha256": "0830abf8384667096d17a77ec2168c8e880d2d491a5f5d9dfb6ce26d2bd47142",
-        "size": 649260
+        "file": "releases/MahqLAB-1.8-full.lock",
+        "sha256": "850608f88573cf0a912694120b27cbf0320f3218ad299a8acd9a5357ebe44de0",
+        "size": 672224
       }
     },
     "revoked": [],
-    "released": "2026-09-27 05:44 UTC"
+    "released": "2026-09-27 13:51 UTC"
   },
-  "sig": "4b7827f27da968c795c1e9c3aeda1a2da92205f804dc1e96803047037b617b148934cb949ff4ec75f3c7ccdd2cbf19683efcd27bfb2d58b4995f769ed8007809"
+  "sig": "16c5bd54da6cc8ac443c52ac714a957f193495e8dba30988fb3d6deb92138b7c13587ba7ed7ae7e07190994f8f4e88b52f8433b2421f728c21b315178cdb2e09"
 }
