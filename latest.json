@@ -1,31 +1,30 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.8",
+    "version": "1.9",
     "notes": [
-      "NEW: Apps + storage - Uninstaller and Disk space map are now one tool with four tabs: installed, updates, space and new PC",
-      "Update every app in one key, with a progress bar and a plain reason when one can't update (open apps: C closes it and tries again)",
-      "New PC: save your app list, then install them all on a new PC in one go (or pick from popular apps)",
-      "Uninstall Microsoft Store apps too - and in the space tab, a big folder tells you which app it belongs to",
-      "Free edition: see which of your apps have updates",
-      "Startup audit: how long your PC takes to start and how much each startup app slows it (M measures your next startup) - and B restarts straight into your BIOS",
-      "Screen Director: fixed screens not coming back after switching off two at once, and the headset/speakers hotkey",
-      "Cleaner key hints at the bottom of every tool, and the Discord button is easier to find"
+      "NEW: Game profiles (was Game boost) - every game gets its own setup that switches on by itself when it starts and goes back when you quit: power plan, background apps calmed or closed, headset or speakers, brightness",
+      "Stretched resolution per game with the sizes pros use (CS2 1280x960...), at your screen's top refresh rate - V checks it on your screen first, so it can never leave you with a black screen",
+      "Pro settings in one key for CS2, Valorant and Fortnite - everything low for FPS, except what helps you see enemies. I shows the list, G again puts your own settings back",
+      "NEW: Autopilot (F1 > Autopilot) - weekly Purge, a restore point before big Windows updates, and a notice when a drive is almost full, your graphics driver is old or apps have updates",
+      "Apps + storage: uninstall Microsoft Store apps too, and updates now show a progress bar and a plain reason when one can't update",
+      "MahqLAB now says MAHQLAB in the big logo (Premium still puts your name there)",
+      "Fixed symbols that showed as ? on some screens, and the Discord button is easier to find"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.8-lite.lock",
-        "sha256": "fc0f3f0931575476c7d7e95ca254ca93e8d3f1bdfb613d842c8d0cf63170c539",
-        "size": 157167
+        "file": "releases/MahqLAB-1.9-lite.lock",
+        "sha256": "7dffbba16006a28a70282c027433e4763282a4603fa3ecf8378b15a5f81e8134",
+        "size": 178606
       },
       "full": {
-        "file": "releases/MahqLAB-1.8-full.lock",
-        "sha256": "850608f88573cf0a912694120b27cbf0320f3218ad299a8acd9a5357ebe44de0",
-        "size": 672224
+        "file": "releases/MahqLAB-1.9-full.lock",
+        "sha256": "1ffd9ba9081147ff90ab195d6132478177afe1fead96e5ce7e025700dace30fd",
+        "size": 697676
       }
     },
     "revoked": [],
-    "released": "2026-09-27 13:51 UTC"
+    "released": "2026-09-27 17:23 UTC"
   },
-  "sig": "16c5bd54da6cc8ac443c52ac714a957f193495e8dba30988fb3d6deb92138b7c13587ba7ed7ae7e07190994f8f4e88b52f8433b2421f728c21b315178cdb2e09"
+  "sig": "c68f93f05a53398b6b9624630aa41dd6e871d2acca7bc7083926a69785a58368f1c5b67e50253e02f4d615ea9d5c973aabcf933c6ac65773cc80bdb25a2bd309"
 }
