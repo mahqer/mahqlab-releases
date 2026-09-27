@@ -1,34 +1,27 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.7",
+    "version": "1.7.1",
     "notes": [
-      "Cleaner menu, every tool still there: 13 buttons instead of 19",
-      "NEW Specs + tune-up: finds free speed your PC isn't using (monitor Hz, RAM speed, Game Bar recording, mouse acceleration and more). Full does each one with one key - U puts it back",
-      "Network: live ping and speed test in one place - and if a faster DNS exists, it asks 'switch?'",
-      "Screen Director: an on/off switch and a brightness slider under every monitor (your main screen always stays on)",
-      "Screen Director: switch between headset and speakers with a click - or your own hotkey, even in a game",
-      "System monitor: pick an app in the process list and press E to end it (Full)",
-      "Game boost: a READY? check on top - ping, CPU, RAM, free space and updates at a glance",
-      "Restore point: press R as Purge opens - it makes one first, then cleans",
-      "Uninstaller: Steam games now uninstall through Steam itself",
-      "Premium: you set the name in your logo once. Typo? Open a ticket for a one-time fix",
-      "Ambient mode fixes, and menu descriptions that always fit"
+      "Session recorder now records FPS: average, 1% and 0.1% lows, and stutters in the game you're playing",
+      "Every FPS drop and lag spike on one timeline - with what caused it (CPU maxed, a busy app, the disk, ping)",
+      "Tick what to record before you start: FPS + stutters, lag spikes, or both",
+      "FPS is read by Intel's PresentMon from outside the game - no overlay, anti-cheat safe"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.7-lite.lock",
-        "sha256": "65a7c8a82b31d7b70e0d063f99ddeeb7eee5b43aee6dd9afdf6a96c3ebc1321f",
-        "size": 122868
+        "file": "releases/MahqLAB-1.7.1-lite.lock",
+        "sha256": "93bec6c9cb548e6b92128a8b0018c8057ad924b32ae62907d0b84d543e4fe2c8",
+        "size": 122937
       },
       "full": {
-        "file": "releases/MahqLAB-1.7-full.lock",
-        "sha256": "03301022516b80ad7d5c25cb50827a0a15d4c17351828fab1504c4b484783c6c",
-        "size": 202775
+        "file": "releases/MahqLAB-1.7.1-full.lock",
+        "sha256": "0830abf8384667096d17a77ec2168c8e880d2d491a5f5d9dfb6ce26d2bd47142",
+        "size": 649260
       }
     },
     "revoked": [],
-    "released": "2026-09-27 05:16 UTC"
+    "released": "2026-09-27 05:44 UTC"
   },
-  "sig": "6ac35b4736f0e2304b74af8245f8d3273b504dba628d163bac638fc8c138f44e7d5f4eef5fa332313cb5ed5d98b3dc7be7061e5e1b8c61f41623af6d4815f201"
+  "sig": "4b7827f27da968c795c1e9c3aeda1a2da92205f804dc1e96803047037b617b148934cb949ff4ec75f3c7ccdd2cbf19683efcd27bfb2d58b4995f769ed8007809"
 }
