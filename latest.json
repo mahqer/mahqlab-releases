@@ -1,38 +1,34 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.6",
+    "version": "1.7",
     "notes": [
-      "Ambient mode, rebuilt: a glass orb wrapped in a liquid ring that IS your music (bass at the bottom, highs at the top)",
-      "Ambient: the core flares on every kick, and smoke puffs off the ring on the beat",
-      "Ambient: W = chill / normal / wild. Wild adds light beams from the corners and shockwaves when the song peaks",
-      "Ambient: new neon clock, and the colon breathes in time with the beat",
-      "Ambient: now playing works beyond Spotify: YouTube, SoundCloud, Apple Music web and most music players",
-      "Ambient: game mode calms it down on its own while a game is in front (not Discord or Chrome)",
-      "Ambient: easy on OLED screens (the clock and stats drift slowly)... and leave it without music for a minute",
-      "MahqLAB updates itself now: the Command Center tells you when one is ready, and F4 shows what's new and installs it",
-      "Updates are signed, keep all your settings and setups, and back up the old version first",
-      "Free edition: 5 tools free, and the rest show what they do and what you're missing",
-      "Licenses: Full, and Premium with your name in the logo. F1 > License (R moves it to another PC)",
-      "Premium: change the name in your logo anytime with F1 > License > N",
-      "Share free edition: give anyone MahqLAB for free, and C copies the zip for Discord",
-      "Screen Director: turn a screen off and back on from the app. It stays off after a restart until you turn it back on",
-      "MahqLAB has a Discord: bottom-left of the Command Center"
+      "Cleaner menu, every tool still there: 13 buttons instead of 19",
+      "NEW Specs + tune-up: finds free speed your PC isn't using (monitor Hz, RAM speed, Game Bar recording, mouse acceleration and more). Full does each one with one key - U puts it back",
+      "Network: live ping and speed test in one place - and if a faster DNS exists, it asks 'switch?'",
+      "Screen Director: an on/off switch and a brightness slider under every monitor (your main screen always stays on)",
+      "Screen Director: switch between headset and speakers with a click - or your own hotkey, even in a game",
+      "System monitor: pick an app in the process list and press E to end it (Full)",
+      "Game boost: a READY? check on top - ping, CPU, RAM, free space and updates at a glance",
+      "Restore point: press R as Purge opens - it makes one first, then cleans",
+      "Uninstaller: Steam games now uninstall through Steam itself",
+      "Premium: you set the name in your logo once. Typo? Open a ticket for a one-time fix",
+      "Ambient mode fixes, and menu descriptions that always fit"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.6-lite.lock",
-        "sha256": "1bd6f67f3182e94821e557d55160ef2063d6807213c77929a4b7f55a6d4ef009",
-        "size": 106905
+        "file": "releases/MahqLAB-1.7-lite.lock",
+        "sha256": "65a7c8a82b31d7b70e0d063f99ddeeb7eee5b43aee6dd9afdf6a96c3ebc1321f",
+        "size": 122868
       },
       "full": {
-        "file": "releases/MahqLAB-1.6-full.lock",
-        "sha256": "3cd267525691f529b2fdbd1eb494ae0d9a74bf02756744c9d9bff86c1274d59b",
-        "size": 182467
+        "file": "releases/MahqLAB-1.7-full.lock",
+        "sha256": "03301022516b80ad7d5c25cb50827a0a15d4c17351828fab1504c4b484783c6c",
+        "size": 202775
       }
     },
     "revoked": [],
-    "released": "2026-09-27 00:32 UTC"
+    "released": "2026-09-27 05:16 UTC"
   },
-  "sig": "a550c6bc842956d2952af8e39dfeee03d629030e882da68257155f359282079acacb8514d1b9a7ebe5604d42810b06ef865e174798b78f9ea197866e111b4801"
+  "sig": "6ac35b4736f0e2304b74af8245f8d3273b504dba628d163bac638fc8c138f44e7d5f4eef5fa332313cb5ed5d98b3dc7be7061e5e1b8c61f41623af6d4815f201"
 }
