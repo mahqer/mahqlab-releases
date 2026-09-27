@@ -1,0 +1,38 @@
+{
+  "manifest": {
+    "app": "MahqLAB",
+    "version": "1.6",
+    "notes": [
+      "Ambient mode, rebuilt: a glass orb wrapped in a liquid ring that IS your music (bass at the bottom, highs at the top)",
+      "Ambient: the core flares on every kick, and smoke puffs off the ring on the beat",
+      "Ambient: W = chill / normal / wild. Wild adds light beams from the corners and shockwaves when the song peaks",
+      "Ambient: new neon clock, and the colon breathes in time with the beat",
+      "Ambient: now playing works beyond Spotify: YouTube, SoundCloud, Apple Music web and most music players",
+      "Ambient: game mode calms it down on its own while a game is in front (not Discord or Chrome)",
+      "Ambient: easy on OLED screens (the clock and stats drift slowly)... and leave it without music for a minute",
+      "MahqLAB updates itself now: the Command Center tells you when one is ready, and F4 shows what's new and installs it",
+      "Updates are signed, keep all your settings and setups, and back up the old version first",
+      "Free edition: 5 tools free, and the rest show what they do and what you're missing",
+      "Licenses: Full, and Premium with your name in the logo. F1 > License (R moves it to another PC)",
+      "Premium: change the name in your logo anytime with F1 > License > N",
+      "Share free edition: give anyone MahqLAB for free, and C copies the zip for Discord",
+      "Screen Director: turn a screen off and back on from the app. It stays off after a restart until you turn it back on",
+      "MahqLAB has a Discord: bottom-left of the Command Center"
+    ],
+    "editions": {
+      "lite": {
+        "file": "releases/MahqLAB-1.6-lite.lock",
+        "sha256": "1bd6f67f3182e94821e557d55160ef2063d6807213c77929a4b7f55a6d4ef009",
+        "size": 106905
+      },
+      "full": {
+        "file": "releases/MahqLAB-1.6-full.lock",
+        "sha256": "3cd267525691f529b2fdbd1eb494ae0d9a74bf02756744c9d9bff86c1274d59b",
+        "size": 182467
+      }
+    },
+    "revoked": [],
+    "released": "2026-09-27 00:32 UTC"
+  },
+  "sig": "a550c6bc842956d2952af8e39dfeee03d629030e882da68257155f359282079acacb8514d1b9a7ebe5604d42810b06ef865e174798b78f9ea197866e111b4801"
+}
