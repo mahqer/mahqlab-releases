@@ -1,30 +1,26 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9",
+    "version": "1.9.1",
     "notes": [
-      "NEW: Game profiles (was Game boost) - every game gets its own setup that switches on by itself when it starts and goes back when you quit: power plan, background apps calmed or closed, headset or speakers, brightness",
-      "Stretched resolution per game with the sizes pros use (CS2 1280x960...), at your screen's top refresh rate - V checks it on your screen first, so it can never leave you with a black screen",
-      "Pro settings in one key for CS2, Valorant and Fortnite - everything low for FPS, except what helps you see enemies. I shows the list, G again puts your own settings back",
-      "NEW: Autopilot (F1 > Autopilot) - weekly Purge, a restore point before big Windows updates, and a notice when a drive is almost full, your graphics driver is old or apps have updates",
-      "Apps + storage: uninstall Microsoft Store apps too, and updates now show a progress bar and a plain reason when one can't update",
-      "MahqLAB now says MAHQLAB in the big logo (Premium still puts your name there)",
-      "Fixed symbols that showed as ? on some screens, and the Discord button is easier to find"
+      "NEW: error reports - if a MahqLAB tool ever hits an error, press C on the error screen (or F1 > Error report on the Command Center) and paste it in the Discord #help channel. It has everything needed to fix it, with your Windows user name taken out",
+      "Network: the live ping / speed test tabs no longer overlap the tool's name",
+      "Game profiles: shorter stretched-resolution line"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9-lite.lock",
-        "sha256": "7dffbba16006a28a70282c027433e4763282a4603fa3ecf8378b15a5f81e8134",
-        "size": 178606
+        "file": "releases/MahqLAB-1.9.1-lite.lock",
+        "sha256": "0a4d4e0117d2f959bba57e712fed9e4a5e4dce63231e782763d7a46feb03fd3a",
+        "size": 180510
       },
       "full": {
-        "file": "releases/MahqLAB-1.9-full.lock",
-        "sha256": "1ffd9ba9081147ff90ab195d6132478177afe1fead96e5ce7e025700dace30fd",
-        "size": 697676
+        "file": "releases/MahqLAB-1.9.1-full.lock",
+        "sha256": "973abc614038fec63f4840ae362f9cfd998389832630d4f2c5f87bf80014c596",
+        "size": 699607
       }
     },
     "revoked": [],
-    "released": "2026-09-27 17:23 UTC"
+    "released": "2026-09-27 22:52 UTC"
   },
-  "sig": "c68f93f05a53398b6b9624630aa41dd6e871d2acca7bc7083926a69785a58368f1c5b67e50253e02f4d615ea9d5c973aabcf933c6ac65773cc80bdb25a2bd309"
+  "sig": "455d8d5eb4c2075fe0f103e16d6f96b7824f95788778fd1263483ad5369fff947fa543b654488d824c8f67e1110265c7d5f1df3515ae5a26deba026cc00ec30d"
 }
