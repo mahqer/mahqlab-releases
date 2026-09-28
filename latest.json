@@ -1,26 +1,24 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.1",
+    "version": "1.9.2",
     "notes": [
-      "NEW: error reports - if a MahqLAB tool ever hits an error, press C on the error screen (or F1 > Error report on the Command Center) and paste it in the Discord #help channel. It has everything needed to fix it, with your Windows user name taken out",
-      "Network: the live ping / speed test tabs no longer overlap the tool's name",
-      "Game profiles: shorter stretched-resolution line"
+      "No MahqLAB icon on your Desktop? The Command Center now notices and offers to put it back in one key (Y) - that also brings back the Ctrl + Alt + M hotkey. N if you don't want it asked again"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.1-lite.lock",
-        "sha256": "0a4d4e0117d2f959bba57e712fed9e4a5e4dce63231e782763d7a46feb03fd3a",
-        "size": 180510
+        "file": "releases/MahqLAB-1.9.2-lite.lock",
+        "sha256": "b0dd48397cc8fbfd36a12328a3513d635f90111fd330504289792306f85076f2",
+        "size": 181960
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.1-full.lock",
-        "sha256": "973abc614038fec63f4840ae362f9cfd998389832630d4f2c5f87bf80014c596",
-        "size": 699607
+        "file": "releases/MahqLAB-1.9.2-full.lock",
+        "sha256": "792f31cdd01525da16e6227184a7349e58e20f4b772e242b7423b20b413ff023",
+        "size": 701057
       }
     },
     "revoked": [],
-    "released": "2026-09-27 22:52 UTC"
+    "released": "2026-09-28 00:37 UTC"
   },
-  "sig": "455d8d5eb4c2075fe0f103e16d6f96b7824f95788778fd1263483ad5369fff947fa543b654488d824c8f67e1110265c7d5f1df3515ae5a26deba026cc00ec30d"
+  "sig": "faf0654ea89ddb767ce1883a7d35a673ca04b6662e91106182dbb76ec51f0d137daa9bc110d9506fe235c28ee6f4bbb9f28a6d033d576fc9a77e6a9b55794e0f"
 }
