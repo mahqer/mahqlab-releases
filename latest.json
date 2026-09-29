@@ -1,24 +1,26 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.2",
+    "version": "1.9.3",
     "notes": [
-      "No MahqLAB icon on your Desktop? The Command Center now notices and offers to put it back in one key (Y) - that also brings back the Ctrl + Alt + M hotkey. N if you don't want it asked again"
+      "Game profiles: stretched res and pro settings for CS2 / Valorant now work with several Steam or Riot accounts on one PC - every account gets them, and the message says which (e.g. 'for 2 Steam accounts (main, alt)')",
+      "If one account's settings file is locked, the others still get set and it tells you which one and what to do",
+      "Turning stretch on while the game is running no longer half-sets it - nothing changes until you close the game"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.2-lite.lock",
-        "sha256": "b0dd48397cc8fbfd36a12328a3513d635f90111fd330504289792306f85076f2",
-        "size": 181960
+        "file": "releases/MahqLAB-1.9.3-lite.lock",
+        "sha256": "c22723430295fe096db13c5cdc87e2bfd0372fbbe862045b6b0dc5f03f76e169",
+        "size": 183379
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.2-full.lock",
-        "sha256": "792f31cdd01525da16e6227184a7349e58e20f4b772e242b7423b20b413ff023",
-        "size": 701057
+        "file": "releases/MahqLAB-1.9.3-full.lock",
+        "sha256": "71e810353c2e41946ac6115a026ff7b238bff6b393d3db052276a1537c2f8d68",
+        "size": 702604
       }
     },
     "revoked": [],
-    "released": "2026-09-28 00:37 UTC"
+    "released": "2026-09-29 12:05 UTC"
   },
-  "sig": "faf0654ea89ddb767ce1883a7d35a673ca04b6662e91106182dbb76ec51f0d137daa9bc110d9506fe235c28ee6f4bbb9f28a6d033d576fc9a77e6a9b55794e0f"
+  "sig": "de5b83be65e6ac9c8a6b4991bd45df8dbdfa7e72e23edba2d764a3ec066ca9720973d0702fabeb87fb323142ccab9862526330cbc00f92d2f372664f71fd3204"
 }
