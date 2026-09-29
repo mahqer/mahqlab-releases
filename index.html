@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MahqLAB - your PC's command center</title>
+<meta name="description" content="MahqLAB puts the tools you'd normally download one by one into a single Windows app: cleanup, uninstaller, app manager, network and DNS, system monitor, multi-monitor control and game profiles.">
+<meta property="og:title" content="MahqLAB - your PC's command center">
+<meta property="og:description" content="Your whole PC, one window. Stop downloading 10 tools.">
+<meta property="og:image" content="site/logo.png">
+<link rel="icon" href="site/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #07050d; --panel: #110c1c; --line: #2a1f3d;
+    --text: #e6f6ff; --dim: #9a93ad; --faint: #6b6480;
+    --cyan: #4fc8ff; --ice: #bfeaff; --blue: #60a5fa; --purple: #a78bfa; --violet: #7c3aed; --green: #4ade80;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.6 "JetBrains Mono", Consolas, ui-monospace, monospace; }
+  a { color: var(--cyan); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+  nav .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: .5px; color: var(--text); }
+  nav .brand img { width: 34px; height: 34px; object-fit: cover; object-position: 22% 50%; border-radius: 6px; }
+  nav .links { display: flex; gap: 22px; font-size: 14px; }
+  nav .links a { color: var(--dim); }
+  .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: center; padding: 40px 0 64px; }
+  h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1.05; margin: 0 0 16px;
+       background: linear-gradient(180deg, var(--ice), var(--cyan) 60%, var(--blue)); -webkit-background-clip: text;
+       background-clip: text; color: transparent; }
+  .tag { color: var(--purple); margin: 0 0 18px; }
+  .lead { color: var(--dim); font-size: 17px; margin: 0 0 28px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-block; padding: 12px 20px; border-radius: 10px; font-weight: 600; font-size: 15px; }
+  .btn.main { background: linear-gradient(90deg, var(--cyan), var(--blue)); color: #06101c; }
+  .btn.ghost { border: 1px solid var(--line); color: var(--text); background: var(--panel); }
+  .btn:hover { text-decoration: none; filter: brightness(1.1); }
+  .video { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #000;
+           box-shadow: 0 0 0 1px #000, 0 20px 60px -20px rgba(124, 58, 237, .45); }
+  .video video { display: block; width: 100%; max-height: 640px; }
+  section { padding: 56px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 26px; margin: 0 0 8px; color: var(--ice); }
+  .sub { color: var(--dim); margin: 0 0 32px; }
+  .tools { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+  .tool { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  .tool b { color: var(--cyan); display: block; margin-bottom: 4px; }
+  .tool span { color: var(--dim); font-size: 14px; }
+  .shots { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .shots figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .shots img { display: block; width: 100%; height: auto; }
+  .shots figcaption { padding: 10px 14px; color: var(--dim); font-size: 14px; }
+  .prices { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .price { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px 20px;
+           display: flex; flex-direction: column; }
+  .price.hot { border-color: var(--violet); box-shadow: 0 0 0 1px var(--violet) inset; }
+  .price .name { color: var(--purple); font-weight: 600; }
+  .price .amt { font-size: 38px; font-weight: 800; color: var(--text); margin: 6px 0 2px; }
+  .price .once { color: var(--faint); font-size: 13px; margin-bottom: 14px; }
+  .price ul { list-style: none; padding: 0; margin: 0 0 6px; color: var(--dim); font-size: 14px; }
+  .price li { padding: 4px 0 4px 20px; position: relative; }
+  .price li::before { content: "+"; position: absolute; left: 0; color: var(--green); }
+  .badge { align-self: flex-start; font-size: 12px; padding: 3px 8px; border-radius: 99px; margin-bottom: 10px;
+           background: rgba(124, 58, 237, .18); color: var(--purple); border: 1px solid var(--violet); }
+  .terms { color: var(--dim); font-size: 14px; margin-top: 22px; }
+  .terms b { color: var(--text); }
+  .faq { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 28px; }
+  .faq h3 { font-size: 15px; margin: 0 0 4px; color: var(--cyan); }
+  .faq p { margin: 0; color: var(--dim); font-size: 14px; }
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--faint); font-size: 14px;
+           display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; }
+  footer .social { display: flex; gap: 20px; }
+  @media (max-width: 880px) {
+    .hero { grid-template-columns: 1fr; padding-top: 16px; }
+    .prices { grid-template-columns: repeat(2, 1fr); }
+    .shots, .faq { grid-template-columns: 1fr; }
+    nav .links { display: none; }
+  }
+  @media (max-width: 520px) { .prices { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#"><img src="site/logo.png" alt="">MahqLAB</a>
+    <div class="links"><a href="#tools">Tools</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+      <a href="https://discord.gg/Jpz7KPuD4S">Discord</a></div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <p class="tag">your PC's command center · built by MAHQ</p>
+      <h1>Your whole PC, one window.</h1>
+      <p class="lead">Stop downloading 10 tools. MahqLAB puts cleanup, an uninstaller, an app manager, network
+        and DNS tools, a system monitor, multi-monitor control and game profiles into one Windows app. One
+        hotkey (Ctrl + Alt + M) opens all of it.</p>
+      <div class="btns">
+        <a class="btn main" href="#pricing">See pricing</a>
+        <a class="btn ghost" href="https://discord.gg/Jpz7KPuD4S">Get the free edition (Discord)</a>
+      </div>
+    </div>
+    <div class="video">
+      <video src="site/demo.mp4" poster="site/logo.png" controls muted autoplay loop playsinline preload="metadata"></video>
+    </div>
+  </header>
+</div>
+
+<section id="tools"><div class="wrap">
+  <h2>Everything inside</h2>
+  <p class="sub">Each tool opens from the Command Center with one key. Anything MahqLAB changes can be undone.</p>
+  <div class="tools">
+    <div class="tool"><b>Purge</b><span>Cleans temp files and browser / game-launcher caches (keeps your logins), the recycle bin and DNS - now, or at every login.</span></div>
+    <div class="tool"><b>Apps + storage</b><span>Full uninstaller that finds leftovers, one-click app updates, what fills your drive, and a new-PC reinstall list.</span></div>
+    <div class="tool"><b>System monitor</b><span>Live CPU, GPU, RAM, disk and network, top processes, end apps.</span></div>
+    <div class="tool"><b>Network</b><span>Live ping (router vs internet), speed test, bufferbloat grade, and a DNS race that switches you to the fastest.</span></div>
+    <div class="tool"><b>Screen Director</b><span>Apps open on their own monitor, per-screen brightness, screens on/off, headset / speakers hotkey.</span></div>
+    <div class="tool"><b>Game profiles</b><span>When a game starts: power plan, quiet apps, audio, brightness, stretched res, pro settings. All back when you quit.</span></div>
+    <div class="tool"><b>Session recorder</b><span>Records FPS, 1% / 0.1% lows and lag spikes while you play, and what caused them.</span></div>
+    <div class="tool"><b>Specs + tune-up</b><span>Your hardware at a glance, plus one-key speed-ups (refresh rate, mouse accel, Game Bar...), all undoable.</span></div>
+    <div class="tool"><b>Startup audit</b><span>What starts with Windows and how much each one slows your boot; turn it off in one key.</span></div>
+    <div class="tool"><b>Crash log</b><span>Blue screens, sudden shutdowns, GPU driver resets and app crashes, in plain English.</span></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>See it</h2>
+  <p class="sub">MahqLAB runs as a fast text interface - no bloat, no background ads, no account.</p>
+  <div class="shots">
+    <figure><img src="site/command-center.png" alt="MahqLAB Command Center" loading="lazy"><figcaption>The Command Center - every tool one key away</figcaption></figure>
+    <figure><img src="site/purge.png" alt="Purge cleaning caches" loading="lazy"><figcaption>Purge - clean junk caches in seconds</figcaption></figure>
+    <figure><img src="site/everything.png" alt="All MahqLAB tools" loading="lazy"><figcaption>Everything inside one app</figcaption></figure>
+    <figure><img src="site/game-profiles.png" alt="Game profiles" loading="lazy"><figcaption>Game profiles - your games set themselves up</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <h2>Pricing</h2>
+  <p class="sub">One-time payment. No subscription.</p>
+  <div class="prices">
+    <div class="price">
+      <div class="name">Free</div><div class="amt">$0</div><div class="once">free forever</div>
+      <ul><li>System monitor</li><li>Network + DNS tools</li><li>Specs (see your speed-ups)</li><li>App updates</li></ul>
+    </div>
+    <div class="price hot">
+      <span class="badge">first 50 buyers</span>
+      <div class="name">Founders</div><div class="amt">$10</div><div class="once">one-time</div>
+      <ul><li>Everything in Full</li><li>Founder role in the Discord</li><li>Upgrade to Premium later for $25</li></ul>
+    </div>
+    <div class="price">
+      <div class="name">Full</div><div class="amt">$25</div><div class="once">one-time</div>
+      <ul><li>Every tool unlocked</li><li>Game profiles, Purge, Screen Director, uninstaller...</li><li>Signed automatic updates</li></ul>
+    </div>
+    <div class="price">
+      <div class="name">Premium</div><div class="amt">$50</div><div class="once">one-time</div>
+      <ul><li>Everything in Full</li><li>Your own name in the big MahqLAB logo</li></ul>
+    </div>
+  </div>
+  <p class="terms"><b>How it works:</b> paid editions are sold through Lemon Squeezy (our reseller). You get a
+    download and a license key for <b>1 PC</b> with <b>1 year of updates</b>. The store opens soon - join the
+    <a href="https://discord.gg/Jpz7KPuD4S">Discord</a> to hear first.</p>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>FAQ</h2>
+  <div class="faq">
+    <div><h3>Which Windows?</h3><p>Windows 10 and 11.</p></div>
+    <div><h3>Is it safe?</h3><p>Everything MahqLAB changes can be undone. It never turns off Windows security or touches anti-cheat, and its updates are signed.</p></div>
+    <div><h3>Is it a subscription?</h3><p>No. You pay once. Your key includes a year of updates.</p></div>
+    <div><h3>Need help?</h3><p>Ask in <a href="https://discord.gg/Jpz7KPuD4S">#help on the Discord</a> - press C on any error screen to copy a report.</p></div>
+  </div>
+</div></section>
+
+<div class="wrap">
+  <footer>
+    <span>© 2026 MAHQ · MahqLAB</span>
+    <span class="social"><a href="https://www.tiktok.com/@mahqlab">TikTok @mahqlab</a>
+      <a href="https://discord.gg/Jpz7KPuD4S">Discord</a></span>
+  </footer>
+</div>
+</body>
+</html>
