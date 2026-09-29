@@ -48,9 +48,31 @@
   h2 { font-size: 26px; margin: 0 0 8px; color: var(--ice); }
   .sub { color: var(--dim); margin: 0 0 32px; }
   .tools { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
-  .tool { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  .tool { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px;
+          font: inherit; text-align: left; color: inherit; cursor: pointer; display: flex; flex-direction: column;
+          transition: border-color .15s, transform .15s; }
+  .tool:hover, .tool:focus-visible { border-color: var(--violet); transform: translateY(-2px); outline: none; }
   .tool b { color: var(--cyan); display: block; margin-bottom: 4px; }
-  .tool span { color: var(--dim); font-size: 14px; }
+  .tool span { color: var(--dim); font-size: 14px; flex: 1; }
+  .tool i { font-style: normal; font-size: 13px; color: var(--purple); margin-top: 10px; }
+  dialog.player { border: 1px solid var(--line); border-radius: 16px; padding: 0; background: var(--panel);
+                  color: var(--text); max-width: min(94vw, 900px); width: 900px; }
+  dialog.player::backdrop { background: rgba(4, 2, 10, .82); backdrop-filter: blur(3px); }
+  .player .in { display: grid; grid-template-columns: auto 1fr; }
+  .player video { display: block; height: min(78vh, 720px); aspect-ratio: 9 / 16; background: #000; }
+  .player .txt { padding: 26px 26px 22px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+  .player h3 { margin: 0; color: var(--ice); font-size: 22px; }
+  .player p { margin: 0; color: var(--dim); font-size: 15px; }
+  .player .also { color: var(--faint); font-size: 13px; margin-top: auto; }
+  .player .row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .player button.btn { border: 0; cursor: pointer; font: inherit; font-weight: 600; font-size: 14px; }
+  .player .x { position: absolute; top: 10px; right: 12px; background: none; border: 0; color: var(--dim);
+               font-size: 26px; cursor: pointer; line-height: 1; }
+  @media (max-width: 700px) {
+    .player .in { grid-template-columns: 1fr; }
+    .player video { height: auto; width: 100%; max-height: 62vh; aspect-ratio: auto; }
+    .player .txt { padding: 16px 18px 18px; }
+  }
   .shots { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .shots figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
   .shots img { display: block; width: 100%; height: auto; }
@@ -112,18 +134,19 @@
 
 <section id="tools"><div class="wrap">
   <h2>Everything inside</h2>
-  <p class="sub">Each tool opens from the Command Center with one key. Anything MahqLAB changes can be undone.</p>
+  <p class="sub">Each tool opens from the Command Center with one key. Anything MahqLAB changes can be undone.
+    Click a tool to see it in action.</p>
   <div class="tools">
-    <div class="tool"><b>Purge</b><span>Cleans temp files and browser / game-launcher caches (keeps your logins), the recycle bin and DNS - now, or at every login.</span></div>
-    <div class="tool"><b>Apps + storage</b><span>Full uninstaller that finds leftovers, one-click app updates, what fills your drive, and a new-PC reinstall list.</span></div>
-    <div class="tool"><b>System monitor</b><span>Live CPU, GPU, RAM, disk and network, top processes, end apps.</span></div>
-    <div class="tool"><b>Network</b><span>Live ping (router vs internet), speed test, bufferbloat grade, and a DNS race that switches you to the fastest.</span></div>
-    <div class="tool"><b>Screen Director</b><span>Apps open on their own monitor, per-screen brightness, screens on/off, headset / speakers hotkey.</span></div>
-    <div class="tool"><b>Game profiles</b><span>When a game starts: power plan, quiet apps, audio, brightness, stretched res, pro settings. All back when you quit.</span></div>
-    <div class="tool"><b>Session recorder</b><span>Records FPS, 1% / 0.1% lows and lag spikes while you play, and what caused them.</span></div>
-    <div class="tool"><b>Specs + tune-up</b><span>Your hardware at a glance, plus one-key speed-ups (refresh rate, mouse accel, Game Bar...), all undoable.</span></div>
-    <div class="tool"><b>Startup audit</b><span>What starts with Windows and how much each one slows your boot; turn it off in one key.</span></div>
-    <div class="tool"><b>Crash log</b><span>Blue screens, sudden shutdowns, GPU driver resets and app crashes, in plain English.</span></div>
+    <button class="tool" data-tool="purge"><b>Purge</b><span>Cleans temp files and browser / game-launcher caches (keeps your logins), the recycle bin and DNS - now, or at every login.</span><i>&#9654; watch it</i></button>
+    <button class="tool" data-tool="apps"><b>Apps + storage</b><span>Full uninstaller that finds leftovers, one-click app updates, what fills your drive, and a new-PC reinstall list.</span><i>&#9654; watch it</i></button>
+    <button class="tool" data-tool="monitor"><b>System monitor</b><span>Live CPU, GPU, RAM, disk and network, top processes, end apps.</span><i>&#9654; watch it</i></button>
+    <button class="tool" data-tool="network"><b>Network</b><span>Live ping (router vs internet), speed test, bufferbloat grade, and a DNS race that switches you to the fastest.</span><i>&#9654; watch it</i></button>
+    <button class="tool" data-tool="screens"><b>Screen Director</b><span>Apps open on their own monitor, per-screen brightness, screens on/off, headset / speakers hotkey.</span><i>&#9654; watch it</i></button>
+    <button class="tool" data-tool="games"><b>Game profiles</b><span>When a game starts: power plan, quiet apps, audio, brightness, stretched res, pro settings. All back when you quit.</span><i>&#9654; watch it</i></button>
+    <button class="tool" data-tool="session"><b>Session recorder</b><span>Records FPS, 1% / 0.1% lows and lag spikes while you play, and what caused them.</span><i>&#9654; watch it</i></button>
+    <button class="tool" data-tool="specs"><b>Specs + tune-up</b><span>Your hardware at a glance, plus one-key speed-ups (refresh rate, mouse accel, Game Bar...), all undoable.</span><i>&#9654; watch it</i></button>
+    <button class="tool" data-tool="startup"><b>Startup audit</b><span>What starts with Windows and how much each one slows your boot; turn it off in one key.</span><i>&#9654; watch it</i></button>
+    <button class="tool" data-tool="crash"><b>Crash log</b><span>Blue screens, sudden shutdowns, GPU driver resets and app crashes, in plain English.</span><i>&#9654; watch it</i></button>
   </div>
 </div></section>
 
@@ -174,6 +197,62 @@
     <div><h3>Need help?</h3><p>Ask in <a href="https://discord.gg/Jpz7KPuD4S">#help on the Discord</a> - press C on any error screen to copy a report.</p></div>
   </div>
 </div></section>
+
+<dialog class="player" id="player" aria-labelledby="p-title">
+  <button class="x" id="p-close" aria-label="Close">&times;</button>
+  <div class="in">
+    <video id="p-video" controls muted playsinline preload="metadata"></video>
+    <div class="txt">
+      <h3 id="p-title"></h3>
+      <p id="p-desc"></p>
+      <div class="row">
+        <button class="btn ghost" id="p-restart">Watch the whole clip</button>
+      </div>
+      <p class="also" id="p-also"></p>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  // Each tool: its clip, and the second in that clip where the tool shows up (from the renderer's caption times).
+  const CLIPS = {
+    v1: {file: "site/clip-clean.mp4", name: "My PC cleans itself", tools: "Purge, Startup audit, Autopilot"},
+    v2: {file: "site/clip-screens.mp4", name: "Every app on its own screen", tools: "Screen Director"},
+    v3: {file: "site/clip-apps.mp4", name: "Take control of your apps", tools: "System monitor, Apps + storage"},
+    v4: {file: "site/clip-speed.mp4", name: "Free speed", tools: "Specs + tune-up, Network, Crash log"},
+    v5: {file: "site/clip-games.mp4", name: "My games set themselves up", tools: "Game profiles, Session recorder"},
+  };
+  const TOOLS = {
+    purge: {name: "Purge", clip: "v1", at: 0, desc: "Clears the junk Windows and your apps pile up: temp files, browser and game-launcher caches (your logins and passwords are kept), the recycle bin and the DNS cache. Run it with one key, or let it run by itself every time you log in - then quick-launch keys 1-5 open the apps you use most."},
+    startup: {name: "Startup audit", clip: "v1", at: 17.4, desc: "Everything that starts with Windows and how much each one slows your boot. Turn any of them off with one key, measure your next startup, or restart straight into your BIOS."},
+    screens: {name: "Screen Director", clip: "v2", at: 0, desc: "Pick a screen for each app once and it opens there every time. Plus brightness per screen, side screens on / off, and a hotkey that switches between your headset and speakers."},
+    monitor: {name: "System monitor", clip: "v3", at: 0, desc: "Live CPU, GPU, RAM, disk and network, with the apps using the most at the top. Something frozen or eating your RAM? End it in one key."},
+    apps: {name: "Apps + storage", clip: "v3", at: 5.0, desc: "Four tabs. Installed: a full uninstaller that also removes the leftovers other uninstallers miss (Store apps too). Updates: update every app at once. Space: see what's filling your drive. New PC: save your app list and reinstall everything in one key."},
+    specs: {name: "Specs + tune-up", clip: "v4", at: 0, desc: "Your hardware at a glance, plus the free speed-ups Windows doesn't turn on for you - refresh rate, Game Bar, mouse acceleration, power plan and more. One key each, and every change can be undone."},
+    network: {name: "Network", clip: "v4", at: 5.6, desc: "Live ping to your router and to the internet (so you know whose fault the lag is), a speed test with a bufferbloat grade, and a DNS race that finds the fastest DNS and switches you to it in one key. One more key switches back."},
+    crash: {name: "Crash log", clip: "v4", at: 13.4, desc: "Blue screens, sudden shutdowns, GPU driver resets and app crashes from Windows' own logs, in plain words - so you finally know why it crashed."},
+    games: {name: "Game profiles", clip: "v5", at: 0, desc: "When a game starts, its profile kicks in: a performance power plan, background apps calmed or closed, headset or speakers, brightness, and stretched resolution at your full refresh rate. Pro settings for CS2, Valorant and Fortnite in one key. Quit the game and everything goes back."},
+    session: {name: "Session recorder", clip: "v5", at: 14.0, desc: "Record a play session and get your FPS, 1% and 0.1% lows, and every lag spike marked with what caused it."},
+  };
+  const dlg = document.getElementById("player"), vid = document.getElementById("p-video");
+  function openTool(key) {
+    const t = TOOLS[key], c = CLIPS[t.clip];
+    document.getElementById("p-title").textContent = t.name;
+    document.getElementById("p-desc").textContent = t.desc;
+    document.getElementById("p-also").textContent = `From the clip "${c.name}" - also shows: ${c.tools}.`;
+    const start = () => { vid.currentTime = t.at; vid.play().catch(() => {}); };
+    if (!vid.src.endsWith(c.file)) {
+      vid.src = c.file;
+      vid.addEventListener("loadedmetadata", start, {once: true});
+    } else start();
+    dlg.showModal();
+  }
+  document.querySelectorAll(".tool[data-tool]").forEach(b => b.addEventListener("click", () => openTool(b.dataset.tool)));
+  document.getElementById("p-restart").addEventListener("click", () => { vid.currentTime = 0; vid.play().catch(() => {}); });
+  document.getElementById("p-close").addEventListener("click", () => dlg.close());
+  dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+  dlg.addEventListener("close", () => vid.pause());
+</script>
 
 <div class="wrap">
   <footer>
