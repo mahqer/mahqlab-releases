@@ -81,7 +81,7 @@
   .shots figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
   .shots img { display: block; width: 100%; height: auto; }
   .shots figcaption { padding: 10px 14px; color: var(--dim); font-size: 14px; }
-  .prices { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .prices { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; }
   .price { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 22px 20px;
            display: flex; flex-direction: column; }
   .price.hot { border-color: var(--violet); box-shadow: 0 0 0 1px var(--violet) inset; }
@@ -93,6 +93,8 @@
   .price li::before { content: "+"; position: absolute; left: 0; color: var(--green); }
   .badge { align-self: flex-start; font-size: 12px; padding: 3px 8px; border-radius: 99px; margin-bottom: 10px;
            background: rgba(124, 58, 237, .18); color: var(--purple); border: 1px solid var(--violet); }
+  .price ul { margin-bottom: 18px; }
+  .price .buy { margin-top: auto; text-align: center; }
   .terms { color: var(--dim); font-size: 14px; margin-top: 22px; }
   .terms b { color: var(--text); }
   .faq { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 28px; }
@@ -126,7 +128,7 @@
         and DNS tools, a system monitor, multi-monitor control and game profiles into one Windows app. One
         hotkey (Ctrl + Alt + M) opens all of it.</p>
       <div class="btns">
-        <a class="btn main" href="#pricing">See pricing</a>
+        <a class="btn main" href="#pricing">Get MahqLAB</a>
         <a class="btn ghost" href="https://discord.gg/Jpz7KPuD4S">Get the free edition (Discord)</a>
       </div>
     </div>
@@ -172,24 +174,35 @@
     <div class="price">
       <div class="name">Free</div><div class="amt">$0</div><div class="once">free forever</div>
       <ul><li>System monitor</li><li>Network + DNS tools</li><li>Specs (see your speed-ups)</li><li>App updates</li></ul>
+      <a class="btn ghost buy" href="https://discord.gg/Jpz7KPuD4S">Get it free (Discord)</a>
     </div>
     <div class="price hot">
       <span class="badge">first 50 buyers</span>
       <div class="name">Founders</div><div class="amt">$10</div><div class="once">one-time</div>
-      <ul><li>Everything in Full</li><li>Founder role in the Discord</li><li>Upgrade to Premium later for $25</li></ul>
+      <ul><li>Everything in Full</li><li>Founder role in the Discord</li><li>Upgrade to Premium later for $25 - while the 10 Founder Premium spots last</li></ul>
+      <a class="btn main buy" href="https://mahqlab.lemonsqueezy.com/checkout/buy/7fc12c3e-3c73-4f10-a1e8-a7223bff8ac3?enabled=2184772">Buy Founders - $10</a>
+    </div>
+    <div class="price hot">
+      <span class="badge">only 10</span>
+      <div class="name">Founders Premium</div><div class="amt">$35</div><div class="once">one-time</div>
+      <ul><li>Premium now: your name in the big logo</li><li>Founder role in the Discord</li><li>10 spots, shared with the $25 Founders upgrade</li></ul>
+      <a class="btn main buy" href="https://mahqlab.lemonsqueezy.com/checkout/buy/7fc12c3e-3c73-4f10-a1e8-a7223bff8ac3?enabled=2184769">Buy Founders Premium - $35</a>
     </div>
     <div class="price">
       <div class="name">Full</div><div class="amt">$25</div><div class="once">one-time</div>
       <ul><li>Every tool unlocked</li><li>Game profiles, Purge, Screen Director, uninstaller...</li><li>Signed automatic updates</li></ul>
+      <a class="btn ghost buy" href="https://mahqlab.lemonsqueezy.com/checkout/buy/7fc12c3e-3c73-4f10-a1e8-a7223bff8ac3?enabled=2184770">Buy Full - $25</a>
     </div>
     <div class="price">
       <div class="name">Premium</div><div class="amt">$50</div><div class="once">one-time</div>
       <ul><li>Everything in Full</li><li>Your own name in the big MahqLAB logo</li></ul>
+      <a class="btn ghost buy" href="https://mahqlab.lemonsqueezy.com/checkout/buy/7fc12c3e-3c73-4f10-a1e8-a7223bff8ac3?enabled=2184771">Buy Premium - $50</a>
     </div>
   </div>
   <p class="terms"><b>How it works:</b> paid editions are sold through Lemon Squeezy (our reseller). You get a
-    download and a license key for <b>1 PC</b> with <b>1 year of updates</b>. The store opens soon - join the
-    <a href="https://discord.gg/Jpz7KPuD4S">Discord</a> to hear first.</p>
+    download and a license key for <b>1 PC</b> with <b>1 year of updates</b> - install it, press <b>F1</b> &gt;
+    <b>License</b> and paste your key. Pay by card or PayPal. All sales are final, so try the free edition first.
+    Questions? Ask in the <a href="https://discord.gg/Jpz7KPuD4S">Discord</a>.</p>
 </div></section>
 
 <section id="faq"><div class="wrap">

@@ -1,25 +1,24 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.4",
+    "version": "1.9.5",
     "notes": [
-      "The MahqLAB store is open: license keys from a purchase now activate in F1 > License",
-      "Free copies: B on a locked tool opens the store"
+      "Founders Premium keys ($35, only 10) activate as Premium"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.4-lite.lock",
-        "sha256": "02cd54319cf4b6cbc0500c953a59619b505001482f9bdc2020b15547f7148fc2",
-        "size": 183543
+        "file": "releases/MahqLAB-1.9.5-lite.lock",
+        "sha256": "195605f6cc742af5cdbf1f557e5a0d47e7a48bbe646667507747d830b7f7cb07",
+        "size": 183548
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.4-full.lock",
-        "sha256": "df560829f55b665da4ffa8e76b6e25729e570162fd945b0e5ca5daf528a390e9",
-        "size": 702768
+        "file": "releases/MahqLAB-1.9.5-full.lock",
+        "sha256": "ae1a99107993e1975352c8a396d81b67d2fd74216c54413208faaa72653a81af",
+        "size": 702773
       }
     },
     "revoked": [],
-    "released": "2026-09-30 04:23 UTC"
+    "released": "2026-09-30 04:46 UTC"
   },
-  "sig": "970c05f49950df05005260470550af363c499c6fc66db9e19e946e12608b8148d01f13d019c56481917ad067a02e0c5295db82f3a6d2532b6739416cff798500"
+  "sig": "4e2e99fdc3e3494322a01d8c4daa19b79ad1df4ba88e399a8581384a0926ce09868152b57ab51a05ac56487604cd10f31124e91be362d34bba27f09b0e070208"
 }
