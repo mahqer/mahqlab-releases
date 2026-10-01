@@ -1,25 +1,24 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.7",
+    "version": "1.9.8",
     "notes": [
-      "Said no to Purge or the MahqLAB helper in Setup? F1 > Settings now has 'Purge at login' and 'Helper at login' - turn them on or off anytime",
-      "Screen Director tells you if the helper won't start after a restart (H turns it on), and Purge offers to run at every login after a clean (L yes, N no thanks - asked once)"
+      "Small fix: clicking Ambient mode (to bring it to the front or move it to another screen) no longer closes it"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.7-lite.lock",
-        "sha256": "505ae8e1aae404d1a68ed380f4d6e9d54b928a4d488345ae6a39a19a5d1feb7d",
-        "size": 187728
+        "file": "releases/MahqLAB-1.9.8-lite.lock",
+        "sha256": "e22d8c1460d81e89281f722433c567ce534b6e0e7f4634adad28988546dadfca",
+        "size": 187787
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.7-full.lock",
-        "sha256": "9e2ea3d0f821ecb41c368e2a635e00ae74c33f295ffa7d5be518baba43b4cc16",
-        "size": 707793
+        "file": "releases/MahqLAB-1.9.8-full.lock",
+        "sha256": "3f0a08b0c8834de5b077d91ca6b39b226f58cfdc579ca4c800b55a187186404c",
+        "size": 707852
       }
     },
     "revoked": [],
-    "released": "2026-10-01 05:00 UTC"
+    "released": "2026-10-01 05:10 UTC"
   },
-  "sig": "0ae34693b7c040acf9631c2c0cdc66bcab9e7f4817673d566cbecc6966108e94c2728dc5d81e47a5b9f79655777e2ef5c89b8dcbd0cfbb5d8ba64bebd7d32400"
+  "sig": "0b8b04708b7ad99a0e66a25fbe9460d7b6afbf4edc5352e01dafe89a908522cf4bf3bdcca10c3637705d048032f7d49b8b66f9e92fec462d45b3887e3c4ce802"
 }
