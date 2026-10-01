@@ -1,24 +1,25 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.8",
+    "version": "1.9.9",
     "notes": [
-      "Small fix: clicking Ambient mode (to bring it to the front or move it to another screen) no longer closes it"
+      "Screen Director: apps like Discord no longer get stuck loading - only the real window is moved to its screen",
+      "Clearer descriptions of what every tool does"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.8-lite.lock",
-        "sha256": "e22d8c1460d81e89281f722433c567ce534b6e0e7f4634adad28988546dadfca",
-        "size": 187787
+        "file": "releases/MahqLAB-1.9.9-lite.lock",
+        "sha256": "6652f318f44ddc1faf116c94daa201c3518d9c339865acd42068065b7695a168",
+        "size": 192974
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.8-full.lock",
-        "sha256": "3f0a08b0c8834de5b077d91ca6b39b226f58cfdc579ca4c800b55a187186404c",
-        "size": 707852
+        "file": "releases/MahqLAB-1.9.9-full.lock",
+        "sha256": "158eff5ec2d093586959501dcc994fd5ae6d7e8d983cbdafa7929fc1550cccfa",
+        "size": 713136
       }
     },
     "revoked": [],
-    "released": "2026-10-01 05:10 UTC"
+    "released": "2026-10-01 05:56 UTC"
   },
-  "sig": "0b8b04708b7ad99a0e66a25fbe9460d7b6afbf4edc5352e01dafe89a908522cf4bf3bdcca10c3637705d048032f7d49b8b66f9e92fec462d45b3887e3c4ce802"
+  "sig": "89ebc0f7e4a37ecb197e23f516072b6de0756cdac6e59c5cd977a574a4839c2e619cc0d5ae5bb0000af917b568d35bf521d51181706c27acea11ea750c56240e"
 }
