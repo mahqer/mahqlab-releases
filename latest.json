@@ -1,25 +1,25 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.6",
+    "version": "1.9.7",
     "notes": [
-      "Fixed: a license key typed into the free edition no longer leads to a piracy warning after installing MahqLAB",
-      "Free edition: paste your key and MahqLAB checks it (without using up your PC), then D takes you to your download - the full version activates your key by itself"
+      "Said no to Purge or the MahqLAB helper in Setup? F1 > Settings now has 'Purge at login' and 'Helper at login' - turn them on or off anytime",
+      "Screen Director tells you if the helper won't start after a restart (H turns it on), and Purge offers to run at every login after a clean (L yes, N no thanks - asked once)"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.6-lite.lock",
-        "sha256": "d585a2b854c1a80184597ec1d7b3518a1569cd3cd0c251dfeeb39996d8ea7457",
-        "size": 186039
+        "file": "releases/MahqLAB-1.9.7-lite.lock",
+        "sha256": "505ae8e1aae404d1a68ed380f4d6e9d54b928a4d488345ae6a39a19a5d1feb7d",
+        "size": 187728
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.6-full.lock",
-        "sha256": "552c5fe9f9a94b36ef2abed6d1e5fbb510b7b8ee8b8daa5850256fb6a909642e",
-        "size": 705264
+        "file": "releases/MahqLAB-1.9.7-full.lock",
+        "sha256": "9e2ea3d0f821ecb41c368e2a635e00ae74c33f295ffa7d5be518baba43b4cc16",
+        "size": 707793
       }
     },
     "revoked": [],
-    "released": "2026-10-01 04:28 UTC"
+    "released": "2026-10-01 05:00 UTC"
   },
-  "sig": "f9e344a0bd88d92feb7a06bfcb0db9fc131f13639f21f3b7716edc574bb661fb46ac66ecdd3fef3ce7a1aaa2a5dc386dae8979c5618bb18090a81f9f3eed760b"
+  "sig": "0ae34693b7c040acf9631c2c0cdc66bcab9e7f4817673d566cbecc6966108e94c2728dc5d81e47a5b9f79655777e2ef5c89b8dcbd0cfbb5d8ba64bebd7d32400"
 }
