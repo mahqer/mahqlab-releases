@@ -1,25 +1,24 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.9",
+    "version": "1.9.10",
     "notes": [
-      "Screen Director: apps like Discord no longer get stuck loading - only the real window is moved to its screen",
-      "Clearer descriptions of what every tool does"
+      "Every tool now tells you when it's finished (installs, app updates, DNS switch, tune-ups, screens on / off, game settings)"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.9-lite.lock",
-        "sha256": "6652f318f44ddc1faf116c94daa201c3518d9c339865acd42068065b7695a168",
-        "size": 192974
+        "file": "releases/MahqLAB-1.9.10-lite.lock",
+        "sha256": "333ed3c5e9bb602750809598797ffcaa3bc644aa77dbb07bdfe586aae5875144",
+        "size": 193581
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.9-full.lock",
-        "sha256": "158eff5ec2d093586959501dcc994fd5ae6d7e8d983cbdafa7929fc1550cccfa",
-        "size": 713136
+        "file": "releases/MahqLAB-1.9.10-full.lock",
+        "sha256": "c9a0fb6043752cdd99c6552f86c49cf8ee393d8d46c8c8c04f9503a7c2a78c88",
+        "size": 713851
       }
     },
     "revoked": [],
-    "released": "2026-10-01 05:56 UTC"
+    "released": "2026-10-01 10:35 UTC"
   },
-  "sig": "89ebc0f7e4a37ecb197e23f516072b6de0756cdac6e59c5cd977a574a4839c2e619cc0d5ae5bb0000af917b568d35bf521d51181706c27acea11ea750c56240e"
+  "sig": "b4624d3e3239c2f2a02a9e062318714524ac174f765dbde22e07c759b230d2ca0864d79bdf0e96c6aee5412506f32f9a3a2a3b492359bf3308fe8d4f9aa2e403"
 }
