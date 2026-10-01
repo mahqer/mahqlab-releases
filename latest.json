@@ -1,24 +1,25 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.5",
+    "version": "1.9.6",
     "notes": [
-      "Founders Premium keys ($35, only 10) activate as Premium"
+      "Fixed: a license key typed into the free edition no longer leads to a piracy warning after installing MahqLAB",
+      "Free edition: paste your key and MahqLAB checks it (without using up your PC), then D takes you to your download - the full version activates your key by itself"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.5-lite.lock",
-        "sha256": "195605f6cc742af5cdbf1f557e5a0d47e7a48bbe646667507747d830b7f7cb07",
-        "size": 183548
+        "file": "releases/MahqLAB-1.9.6-lite.lock",
+        "sha256": "d585a2b854c1a80184597ec1d7b3518a1569cd3cd0c251dfeeb39996d8ea7457",
+        "size": 186039
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.5-full.lock",
-        "sha256": "ae1a99107993e1975352c8a396d81b67d2fd74216c54413208faaa72653a81af",
-        "size": 702773
+        "file": "releases/MahqLAB-1.9.6-full.lock",
+        "sha256": "552c5fe9f9a94b36ef2abed6d1e5fbb510b7b8ee8b8daa5850256fb6a909642e",
+        "size": 705264
       }
     },
     "revoked": [],
-    "released": "2026-09-30 04:46 UTC"
+    "released": "2026-10-01 04:28 UTC"
   },
-  "sig": "4e2e99fdc3e3494322a01d8c4daa19b79ad1df4ba88e399a8581384a0926ce09868152b57ab51a05ac56487604cd10f31124e91be362d34bba27f09b0e070208"
+  "sig": "f9e344a0bd88d92feb7a06bfcb0db9fc131f13639f21f3b7716edc574bb661fb46ac66ecdd3fef3ce7a1aaa2a5dc386dae8979c5618bb18090a81f9f3eed760b"
 }
