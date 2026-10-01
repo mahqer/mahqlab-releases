@@ -1,24 +1,24 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.10",
+    "version": "1.9.11",
     "notes": [
-      "Every tool now tells you when it's finished (installs, app updates, DNS switch, tune-ups, screens on / off, game settings)"
+      "Small fix: Screen Director's helper now picks up fixes right away, without a restart"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.10-lite.lock",
-        "sha256": "333ed3c5e9bb602750809598797ffcaa3bc644aa77dbb07bdfe586aae5875144",
+        "file": "releases/MahqLAB-1.9.11-lite.lock",
+        "sha256": "60a1255af761592b31bbfefddb2dcecf8126f261036dd483da1e9775b6b2724d",
         "size": 193581
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.10-full.lock",
-        "sha256": "c9a0fb6043752cdd99c6552f86c49cf8ee393d8d46c8c8c04f9503a7c2a78c88",
-        "size": 713851
+        "file": "releases/MahqLAB-1.9.11-full.lock",
+        "sha256": "61773be02e6241c1d3837241fd8cfd03f5332407e9d6594be46c2909352db8e1",
+        "size": 714076
       }
     },
     "revoked": [],
-    "released": "2026-10-01 10:35 UTC"
+    "released": "2026-10-01 18:25 UTC"
   },
-  "sig": "b4624d3e3239c2f2a02a9e062318714524ac174f765dbde22e07c759b230d2ca0864d79bdf0e96c6aee5412506f32f9a3a2a3b492359bf3308fe8d4f9aa2e403"
+  "sig": "b804cf662f8d540d4fd003306b51550585537500023a163d4af3e880d60eb919c2cbe4a9435640d493eb32e30fe0c3701dbc9d4dae70b001691812b3ab690b0a"
 }
