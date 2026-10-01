@@ -95,6 +95,9 @@
            background: rgba(124, 58, 237, .18); color: var(--purple); border: 1px solid var(--violet); }
   .price ul { margin-bottom: 18px; }
   .price .buy { margin-top: auto; text-align: center; }
+  .price.later { opacity: .62; }
+  .price .buy.off { cursor: default; color: var(--faint); }
+  .badge.muted { background: transparent; color: var(--faint); border-color: var(--line); }
   .terms { color: var(--dim); font-size: 14px; margin-top: 22px; }
   .terms b { color: var(--text); }
   .faq { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 28px; }
@@ -176,27 +179,22 @@
       <ul><li>System monitor</li><li>Network + DNS tools</li><li>Specs (see your speed-ups)</li><li>App updates</li></ul>
       <a class="btn ghost buy" href="https://discord.gg/Jpz7KPuD4S">Get it free (Discord)</a>
     </div>
-    <div class="price hot">
-      <span class="badge">first 50 buyers</span>
-      <div class="name">Founders</div><div class="amt">$10</div><div class="once">one-time</div>
-      <ul><li>Everything in Full</li><li>Founder role in the Discord</li><li>Upgrade to Premium later for $25 - while the 10 Founder Premium spots last</li></ul>
-      <a class="btn main buy" href="https://mahqlab.lemonsqueezy.com/checkout/buy/7fc12c3e-3c73-4f10-a1e8-a7223bff8ac3?enabled=2184772">Buy Founders - $10</a>
-    </div>
-    <div class="price hot">
-      <span class="badge">only 10</span>
-      <div class="name">Founders Premium</div><div class="amt">$35</div><div class="once">one-time</div>
-      <ul><li>Premium now: your name in the big logo</li><li>Founder role in the Discord</li><li>10 spots, shared with the $25 Founders upgrade</li></ul>
-      <a class="btn main buy" href="https://mahqlab.lemonsqueezy.com/checkout/buy/7fc12c3e-3c73-4f10-a1e8-a7223bff8ac3?enabled=2184769">Buy Founders Premium - $35</a>
-    </div>
     <div class="price">
       <div class="name">Full</div><div class="amt">$25</div><div class="once">one-time</div>
       <ul><li>Every tool unlocked</li><li>Game profiles, Purge, Screen Director, uninstaller...</li><li>Signed automatic updates</li></ul>
       <a class="btn ghost buy" href="https://mahqlab.lemonsqueezy.com/checkout/buy/7fc12c3e-3c73-4f10-a1e8-a7223bff8ac3?enabled=2184770">Buy Full - $25</a>
     </div>
-    <div class="price">
+    <div class="price hot">
+      <span class="badge">limited spots</span>
+      <div class="name">Founders Premium</div><div class="amt">$35</div><div class="once">one-time - then $50</div>
+      <ul><li>Everything in Full</li><li>Your name in the big MahqLAB logo</li><li>Founder role in the Discord</li></ul>
+      <a class="btn main buy" href="https://mahqlab.lemonsqueezy.com/checkout/buy/7fc12c3e-3c73-4f10-a1e8-a7223bff8ac3?enabled=2184769">Buy Founders Premium - $35</a>
+    </div>
+    <div class="price later">
+      <span class="badge muted">after Founders</span>
       <div class="name">Premium</div><div class="amt">$50</div><div class="once">one-time</div>
-      <ul><li>Everything in Full</li><li>Your own name in the big MahqLAB logo</li></ul>
-      <a class="btn ghost buy" href="https://mahqlab.lemonsqueezy.com/checkout/buy/7fc12c3e-3c73-4f10-a1e8-a7223bff8ac3?enabled=2184771">Buy Premium - $50</a>
+      <ul><li>Everything in Full</li><li>Your name in the big MahqLAB logo</li></ul>
+      <span class="btn ghost buy off">Founders Premium first</span>
     </div>
   </div>
   <p class="terms"><b>How it works:</b> paid editions are sold through Lemon Squeezy (our reseller). You get a
