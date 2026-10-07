@@ -1,24 +1,25 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.11",
+    "version": "1.9.12",
     "notes": [
-      "Small fix: Screen Director's helper now picks up fixes right away, without a restart"
+      "Game profiles: pick any stretched resolution your screen supports - C opens the full list (the pro picks are marked). Requested by ALYX",
+      "Premium: a new icon for the Command Center - a little drift track where your logo ends (F1 > Icon)"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.11-lite.lock",
-        "sha256": "60a1255af761592b31bbfefddb2dcecf8126f261036dd483da1e9775b6b2724d",
-        "size": 193581
+        "file": "releases/MahqLAB-1.9.12-lite.lock",
+        "sha256": "0a667a0ed9b4f787be72a1fc3982e5b2b5bde335f9f56fb20ffde79c56ab5765",
+        "size": 203244
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.11-full.lock",
-        "sha256": "61773be02e6241c1d3837241fd8cfd03f5332407e9d6594be46c2909352db8e1",
-        "size": 714076
+        "file": "releases/MahqLAB-1.9.12-full.lock",
+        "sha256": "459d1b0fd98a98daf80a467fea49ffd0e30ed5f6c967c99374d40667987f9760",
+        "size": 725070
       }
     },
     "revoked": [],
-    "released": "2026-10-01 18:25 UTC"
+    "released": "2026-10-07 15:35 UTC"
   },
-  "sig": "b804cf662f8d540d4fd003306b51550585537500023a163d4af3e880d60eb919c2cbe4a9435640d493eb32e30fe0c3701dbc9d4dae70b001691812b3ab690b0a"
+  "sig": "9b2c54bd8eb6ba14c09ba6bbf1e5eb44c2b251f5ebafce5493332ed71074011336bf2871e96126321ba7278a70ab6efa5b2e0b52cf295d7f3ef68bbf80a4ec0a"
 }
