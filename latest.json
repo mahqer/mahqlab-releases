@@ -1,25 +1,24 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.12",
+    "version": "1.9.13",
     "notes": [
-      "Game profiles: pick any stretched resolution your screen supports - C opens the full list (the pro picks are marked). Requested by ALYX",
-      "Premium: a new icon for the Command Center - a little drift track where your logo ends (F1 > Icon)"
+      "Sim mode: your other apps now stay on their screens when it switches the main display"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.12-lite.lock",
-        "sha256": "0a667a0ed9b4f787be72a1fc3982e5b2b5bde335f9f56fb20ffde79c56ab5765",
-        "size": 203244
+        "file": "releases/MahqLAB-1.9.13-lite.lock",
+        "sha256": "f113e2deb64c2d77e3aaef0df54e1560091e1218cd9c1a4e391504f6593867e8",
+        "size": 203772
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.12-full.lock",
-        "sha256": "459d1b0fd98a98daf80a467fea49ffd0e30ed5f6c967c99374d40667987f9760",
-        "size": 725070
+        "file": "releases/MahqLAB-1.9.13-full.lock",
+        "sha256": "faa73c2b728242ffc91a2c4c107e4d66bcaecb0b46a83dd9326df2ed638ccb31",
+        "size": 725999
       }
     },
     "revoked": [],
-    "released": "2026-10-07 15:35 UTC"
+    "released": "2026-10-08 00:22 UTC"
   },
-  "sig": "9b2c54bd8eb6ba14c09ba6bbf1e5eb44c2b251f5ebafce5493332ed71074011336bf2871e96126321ba7278a70ab6efa5b2e0b52cf295d7f3ef68bbf80a4ec0a"
+  "sig": "2059e88659d8f2d50f7df4b60bc384c30520276f3b5912c9d23f201ae34c38c70e376a9051be2e168ecb44ef417bfa883e906d0c0fbc4756c91b48be2b861c06"
 }
