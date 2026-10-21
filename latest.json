@@ -1,25 +1,26 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "1.9.14",
+    "version": "2.0",
     "notes": [
-      "Uptime now counts from when you turned your PC on - shutting down no longer keeps the old count going",
-      "Screen Director: turning off a screen in the middle no longer hides it under another one, and it comes back in the same spot"
+      "NEW - Taskbar (Premium exclusive): make your taskbar invisible (just your icons over the wallpaper), pick white / black / auto icons, and hide every button you don't use - Search, Task View, News and weather, Notifications, even the clock. Each one explained, and changing it back restores it exactly",
+      "Taskbar also does your other screens' taskbars (on or off, and which apps show on them), unread badges, seconds on the clock and Aero Shake",
+      "Purge's uptime now counts from when you turned your PC on"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-1.9.14-lite.lock",
-        "sha256": "491e63a7228b5bde2d3ebb028b8535bd741fe8db5168fa050b0dfa5ca6d51469",
-        "size": 204646
+        "file": "releases/MahqLAB-2.0-lite.lock",
+        "sha256": "14a56e1ebdd8cd89f0506d218abe68bf3eb437799afbbf82b67238f6caaeb1e7",
+        "size": 213057
       },
       "full": {
-        "file": "releases/MahqLAB-1.9.14-full.lock",
-        "sha256": "87f6fdf8492f324d7829cfe20e5d36cda1fa10e477fda1a7a288f4098482924f",
-        "size": 727527
+        "file": "releases/MahqLAB-2.0-full.lock",
+        "sha256": "c1194303bf8565c092b7c75ac28a355c1ee8304c0d2ea5f4e29e2034c8bf734f",
+        "size": 740294
       }
     },
     "revoked": [],
-    "released": "2026-10-16 01:55 UTC"
+    "released": "2026-10-21 17:05 UTC"
   },
-  "sig": "fcafbddf8ee37285f81aca8e8986cffe5d80ca9f6beecb64b91efa06cb3a5e1c97e8bf77824685dcb5be449885c7c0eb9f0f67de7e55538e7039900e987d1f0e"
+  "sig": "28f26583f6b64ccc9d658fd95a708f3cc5969007f1524444ea202c3f41e173f9858f311d0df9c279c7fb310ba05a2fe33fb980d963cf8c81ea81615df7aefd04"
 }
