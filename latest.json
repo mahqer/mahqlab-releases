@@ -1,26 +1,32 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "2.0",
+    "version": "2.1",
     "notes": [
-      "NEW - Taskbar (Premium exclusive): make your taskbar invisible (just your icons over the wallpaper), pick white / black / auto icons, and hide every button you don't use - Search, Task View, News and weather, Notifications, even the clock. Each one explained, and changing it back restores it exactly",
-      "Taskbar also does your other screens' taskbars (on or off, and which apps show on them), unread badges, seconds on the clock and Aero Shake",
-      "Purge's uptime now counts from when you turned your PC on"
+      "NEW - Before / after in Session recorder: record a game, change your settings, record again, then press C on both sessions to see the difference in average FPS, 1% lows and stutters. C copies the result to share",
+      "Game profiles: notifications per game - all, only the apps you pick (W opens Windows' list to pick them), or none while you play. Everything comes back when the game closes",
+      "System monitor shows your graphics card's temperature and warns when it's slowing itself down from heat (NVIDIA cards). Session recorder now names a too-hot card as a cause of FPS drops",
+      "New PC (Apps + storage): saving your app list now saves your MahqLAB settings too - game profiles, screen layouts, theme. Press M on the new PC to put them back",
+      "F1 > Setup report: copies a short summary of your PC and setup to paste with a support question",
+      "MahqLAB now sets up its own Python by itself, so it keeps working even if the PC's Python changes"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-2.0-lite.lock",
-        "sha256": "14a56e1ebdd8cd89f0506d218abe68bf3eb437799afbbf82b67238f6caaeb1e7",
-        "size": 213057
+        "file": "releases/MahqLAB-2.1-lite.lock",
+        "sha256": "930224addde6109e4a6d1f234f290f83df0bb8535fc0accf026a2c778a137d5e",
+        "size": 222882
       },
       "full": {
-        "file": "releases/MahqLAB-2.0-full.lock",
-        "sha256": "c1194303bf8565c092b7c75ac28a355c1ee8304c0d2ea5f4e29e2034c8bf734f",
-        "size": 740294
+        "file": "releases/MahqLAB-2.1-full.lock",
+        "sha256": "c40de41dc7c77012cecb84e4676c23858df21a65581836e735a5a5440923e9ec",
+        "size": 753871
       }
     },
     "revoked": [],
-    "released": "2026-10-21 17:05 UTC"
+    "released": "2026-10-23 02:32 UTC"
   },
-  "sig": "28f26583f6b64ccc9d658fd95a708f3cc5969007f1524444ea202c3f41e173f9858f311d0df9c279c7fb310ba05a2fe33fb980d963cf8c81ea81615df7aefd04"
+  "sig": "9e17827c5c11eb9bf0dda6d696011730ba5841bdfdd1cdaeb0b4cd0adf9722f15a08dc47e23087f02f584cdc436623bad4d2e3e721635bb096f65223f8790e09",
+  "sigs": [
+    "e98123892d7c1298430ac15e99a3298efdc1f9566ae7b1d3d38eb66a6528338f24298f21f5c587fb84a6f45c1a6cdfb91495d54251c0317b15c22536d2fecc0f"
+  ]
 }
