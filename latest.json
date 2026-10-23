@@ -1,32 +1,27 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "2.1",
+    "version": "2.1.1",
     "notes": [
-      "NEW - Before / after in Session recorder: record a game, change your settings, record again, then press C on both sessions to see the difference in average FPS, 1% lows and stutters. C copies the result to share",
-      "Game profiles: notifications per game - all, only the apps you pick (W opens Windows' list to pick them), or none while you play. Everything comes back when the game closes",
-      "System monitor shows your graphics card's temperature and warns when it's slowing itself down from heat (NVIDIA cards). Session recorder now names a too-hot card as a cause of FPS drops",
-      "New PC (Apps + storage): saving your app list now saves your MahqLAB settings too - game profiles, screen layouts, theme. Press M on the new PC to put them back",
-      "F1 > Setup report: copies a short summary of your PC and setup to paste with a support question",
-      "MahqLAB now sets up its own Python by itself, so it keeps working even if the PC's Python changes"
+      "Fixes: ending an app in System monitor no longer cancels when you move the mouse, apps you just opened show at the top, F1 settings scroll, and a cleaner Startup audit and home screen"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-2.1-lite.lock",
-        "sha256": "930224addde6109e4a6d1f234f290f83df0bb8535fc0accf026a2c778a137d5e",
-        "size": 222882
+        "file": "releases/MahqLAB-2.1.1-lite.lock",
+        "sha256": "99390a9d602ca10b52c11ef0197372561ad10de54c5ea23c4152a240e259b7c1",
+        "size": 223733
       },
       "full": {
-        "file": "releases/MahqLAB-2.1-full.lock",
-        "sha256": "c40de41dc7c77012cecb84e4676c23858df21a65581836e735a5a5440923e9ec",
-        "size": 753871
+        "file": "releases/MahqLAB-2.1.1-full.lock",
+        "sha256": "248de6f5fc0f1fc834ee8dddc1e17b21526fac66bc0fb63c11b7b3dfd36e1916",
+        "size": 754881
       }
     },
     "revoked": [],
-    "released": "2026-10-23 02:32 UTC"
+    "released": "2026-10-23 03:54 UTC"
   },
-  "sig": "9e17827c5c11eb9bf0dda6d696011730ba5841bdfdd1cdaeb0b4cd0adf9722f15a08dc47e23087f02f584cdc436623bad4d2e3e721635bb096f65223f8790e09",
+  "sig": "7ace0722273ebc48886ab703d9f28d18239094ca2b0c0bbf49f1291abcc9b7187e200688a9e2520a49d3919fda405f6fe99e43f8e9687ccde68c1d284e183206",
   "sigs": [
-    "e98123892d7c1298430ac15e99a3298efdc1f9566ae7b1d3d38eb66a6528338f24298f21f5c587fb84a6f45c1a6cdfb91495d54251c0317b15c22536d2fecc0f"
+    "29b97d30016ad71c02464a170c73b89abee4c41c56bd512300a2c3e75b8ea55bfa5727b41abb58d8e664aa53799be5806cdd8643204a397ca9c6b47a0003700c"
   ]
 }
