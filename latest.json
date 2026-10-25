@@ -1,27 +1,27 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "notes": [
-      "Fixes: ending an app in System monitor no longer cancels when you move the mouse, apps you just opened show at the top, F1 settings scroll, and a cleaner Startup audit and home screen"
+      "Fixes a license check that could switch some copies to free after updating, and apps opened from Quick launch now snap to their screen more reliably"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-2.1.1-lite.lock",
-        "sha256": "99390a9d602ca10b52c11ef0197372561ad10de54c5ea23c4152a240e259b7c1",
-        "size": 223733
+        "file": "releases/MahqLAB-2.1.2-lite.lock",
+        "sha256": "51bc5fb881b1ce27865f1f7fdf87c9d0b96e6d57c1d0599898f79e6116861b2e",
+        "size": 223994
       },
       "full": {
-        "file": "releases/MahqLAB-2.1.1-full.lock",
-        "sha256": "248de6f5fc0f1fc834ee8dddc1e17b21526fac66bc0fb63c11b7b3dfd36e1916",
-        "size": 754881
+        "file": "releases/MahqLAB-2.1.2-full.lock",
+        "sha256": "ca482f47dbba7e5965e95543e32ab2207c32bd2b221256012fafcee1a8574370",
+        "size": 755299
       }
     },
     "revoked": [],
-    "released": "2026-10-23 03:54 UTC"
+    "released": "2026-10-25 23:22 UTC"
   },
-  "sig": "7ace0722273ebc48886ab703d9f28d18239094ca2b0c0bbf49f1291abcc9b7187e200688a9e2520a49d3919fda405f6fe99e43f8e9687ccde68c1d284e183206",
+  "sig": "b0d8b684251352e48f20c71dcdace87f00f513dbc35010aa7ab59ae3f575946500bb9ead8b5e8a2354e8a3a5fbc33ab9567f916190d28ddc3601365fff36650a",
   "sigs": [
-    "29b97d30016ad71c02464a170c73b89abee4c41c56bd512300a2c3e75b8ea55bfa5727b41abb58d8e664aa53799be5806cdd8643204a397ca9c6b47a0003700c"
+    "6cb5f7820cb06e7f7c0bacf15dd7c0b33fca0f01496a8be8ebf2c113e26ad836be2f10a9dba7bc385a7f8c8a53837382f0ee496c5501e9b409e35ef96ad5e109"
   ]
 }
