@@ -1,29 +1,28 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "2.1.4",
+    "version": "2.1.5",
     "notes": [
-      "New: OLED guard (under TOOLS, Full and Premium). Leave your PC on without burn-in: after a few minutes with no mouse or keyboard your OLED goes fully black, and any input brings it straight back. Your other screens keep running, and it never kicks in during a fullscreen game or video. It's off until you turn it on",
-      "OLED guard can also auto-hide your taskbar and remove the thin bar to the right of the clock",
-      "BattleBot Quick attack: F9 now ends the battle and goes home for you, then starts the next one"
+      "OLED guard: a fullscreen video keeps your screen on only while it's playing. Pause it and walk away, and the screen still goes black after your wait time",
+      "OLED guard: fixed fullscreen YouTube not being noticed (from a maximized Chrome window, or after you clicked on another screen)"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-2.1.4-lite.lock",
-        "sha256": "a52ce937199f991d35f0ccc6926d9835174d376e0b7c335236d1686368edb075",
+        "file": "releases/MahqLAB-2.1.5-lite.lock",
+        "sha256": "b96d8ba512dc9310a215fdde3a5349512ededbd8ae8fcc790dbb22e210c45923",
         "size": 224312
       },
       "full": {
-        "file": "releases/MahqLAB-2.1.4-full.lock",
-        "sha256": "c5b9fb92b5bb790cb40ae401207326075c7d5e81b0e53438ca2f57d6f3bcc739",
-        "size": 764319
+        "file": "releases/MahqLAB-2.1.5-full.lock",
+        "sha256": "fd0b6eac410d0bcdc150a691ff76f6e0b7ab9bbf3c0038c4feb7f719bc6af0d9",
+        "size": 766554
       }
     },
     "revoked": [],
-    "released": "2026-11-09 02:36 UTC"
+    "released": "2026-11-09 18:29 UTC"
   },
-  "sig": "b112c12a4ad65d7ae7c647f15dffd457cbfd93e91a69a28cef13b3a5363a220b98cd62d7d6f6eff6a23e70526f8f371c9459ee57a881a4c07b8901395fb8e00f",
+  "sig": "fb5996ff5eb21902138544a6c3af36c6f6dcd964785307d6169f7cf3facbe11eba340d8b7226bf63121b415c0b31ac653454dd2caf2667465b25db2ae8c98c07",
   "sigs": [
-    "b1f487bf7ffb340470f19663572a01ec42bcff51ca6f947d79924624f2c88b37270aa4b3f6c73bd556fb4344e57c85845a91629c8ba174838a1daa419bfeeb0c"
+    "7c0546e7b0f22cd5f3f9460f6a465ef390cc22fb1028a0fcfdb864160f21a5f13b97b7964e8136a2d9c48189e872c4b951422d4dc3bd10af6995034388a7630b"
   ]
 }
