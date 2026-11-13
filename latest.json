@@ -1,28 +1,31 @@
 {
   "manifest": {
     "app": "MahqLAB",
-    "version": "2.1.5",
+    "version": "2.1.6",
     "notes": [
-      "OLED guard: a fullscreen video keeps your screen on only while it's playing. Pause it and walk away, and the screen still goes black after your wait time",
-      "OLED guard: fixed fullscreen YouTube not being noticed (from a maximized Chrome window, or after you clicked on another screen)"
+      "Fixed: Startup audit closed with an error when you pressed Enter, Space or T on a system-wide app. It now opens Task Manager's Startup tab like it should",
+      "Session recorder: a session cut off by a PC crash or power loss now opens, with everything it recorded up to that moment",
+      "Buttons that open a Windows page or a link (Windows Security, Windows Update, Discord, the store and more) show a message instead of an error screen on PCs where Windows can't open them",
+      "OLED guard: keeps protecting through screen changes, still finds your screen if you move it to another port, and no longer goes black during fullscreen video in Store apps like Netflix",
+      "Game profiles: Valorant's stretched res now says what it does. It gives a bigger HUD at a lower resolution; true stretch was patched by Riot, so players stay normal width"
     ],
     "editions": {
       "lite": {
-        "file": "releases/MahqLAB-2.1.5-lite.lock",
-        "sha256": "b96d8ba512dc9310a215fdde3a5349512ededbd8ae8fcc790dbb22e210c45923",
-        "size": 224312
+        "file": "releases/MahqLAB-2.1.6-lite.lock",
+        "sha256": "fae4e4f35dfa09653a572484062cfeca0250d5498e7bb05b421aba031d959b84",
+        "size": 224916
       },
       "full": {
-        "file": "releases/MahqLAB-2.1.5-full.lock",
-        "sha256": "fd0b6eac410d0bcdc150a691ff76f6e0b7ab9bbf3c0038c4feb7f719bc6af0d9",
-        "size": 766554
+        "file": "releases/MahqLAB-2.1.6-full.lock",
+        "sha256": "261198594bd66f2deffcd22d05511f1ccfe3c16078567effff91b133b20099fd",
+        "size": 769058
       }
     },
     "revoked": [],
-    "released": "2026-11-09 18:29 UTC"
+    "released": "2026-11-13 22:46 UTC"
   },
-  "sig": "fb5996ff5eb21902138544a6c3af36c6f6dcd964785307d6169f7cf3facbe11eba340d8b7226bf63121b415c0b31ac653454dd2caf2667465b25db2ae8c98c07",
+  "sig": "1420947f89bc99dc482bcc59e11cbf4c5ceb5cd3b865a5934fe49e45ff487af9d2c6a31d60185567b513cdd4605fe8ed49a1b72c2b5bb57173c2ecd62ed69307",
   "sigs": [
-    "7c0546e7b0f22cd5f3f9460f6a465ef390cc22fb1028a0fcfdb864160f21a5f13b97b7964e8136a2d9c48189e872c4b951422d4dc3bd10af6995034388a7630b"
+    "99d1ae645b355ea127ed6432b86d6588fb80295524057a287ed4a1f9c5ef7ae0e7a6159b713d6df64aca768c70569e37fc1ef15b0e78414206693b064b917602"
   ]
 }
